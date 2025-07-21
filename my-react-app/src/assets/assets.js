@@ -1,0 +1,1 @@
+export{ default as card1 } from './benefits/card-1.svg?url'
