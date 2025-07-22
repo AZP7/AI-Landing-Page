@@ -240,6 +240,10 @@ export const pricing = [
     ],
   },
 ];
+export const svgImage = {
+  chatBubbleWing: "../assets/svg/ChatBubbleWing",
+  icon :"../assets/ChatBubble.svg"
+}
 
 export const benefits = [
   {

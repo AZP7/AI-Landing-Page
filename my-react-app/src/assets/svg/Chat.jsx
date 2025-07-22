@@ -1,0 +1,19 @@
+import React from 'react'
+
+function Chat({ className, pathClassName }) {
+  return (
+    <svg
+      className={`${className || ""}`}
+      version="1.0" xmlns="http://www.w3.org/2000/svg"
+      width="300.000000pt" height="238.000000pt"
+      viewBox="0 0 300.000000 238.000000" preserveAspectRatio="xMidYMid meet">
+      <g transform="translate(0.000000,238.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+
+        <path className={`${pathClassName || ""}`}
+          d="M797 1779 c-20 -11 -49 -38 -65 -61 l-27 -41 -3 -311 c-2 -171 0 -326 3 -344 13 -73 108 -141 196 -142 l45 0 -20 -95 c-14 -69 -16 -99 -9 -106 8 -8 66 18 205 92 l193 104 257 5 256 5 43 30 c23 17 52 48 63 70 20 38 21 55 21 360 0 360 1 355 -78 419 l-39 31 -501 2 c-485 2 -503 2 -540 -18z m1031 -33 c15 -8 38 -26 52 -41 l25 -27 3 -324 c3 -358 3 -361 -60 -406 -32 -22 -40 -23 -283 -26 l-251 -3 -174 -93 c-96 -51 -176 -92 -178 -90 -2 1 4 36 12 78 23 111 26 106 -46 106 -86 0 -140 27 -168 85 -20 41 -21 55 -18 352 3 307 3 308 27 342 44 61 39 60 559 61 387 0 478 -3 500 -14z" /> </g> </svg>
+
+
+  )
+}
+
+export default Chat

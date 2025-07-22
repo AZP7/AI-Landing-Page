@@ -12,6 +12,6 @@ const ChatBubbleWing = ({ className, pathClassName }) => {
       />
     </svg>
   );
-};
+};  
 
 export default ChatBubbleWing;

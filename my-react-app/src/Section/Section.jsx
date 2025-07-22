@@ -1,6 +1,6 @@
 import React from 'react'
 import { benefits } from "../constants";
-import {benefitImage2} from "../assets/index.js";
+import Services from '../Services/Services.jsx'
 import Collaboration from '../Collaboration/Collaboration.jsx'
 
 function Section() {
@@ -26,6 +26,7 @@ function Section() {
         ))
       } 
       <Collaboration></Collaboration>
+      <Services></Services>
         
     </section>
 
