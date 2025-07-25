@@ -6,8 +6,7 @@ import bg3 from '../assets/services/service-3.png'
 import {brainwaveServicesIcons} from '../constants/index.js'
 import play from  '../assets/play.svg'
 import brainwave from '../assets/brainwave-symbol.svg'
-import VideoBar  from '../assets/Svg/VideoBar.jsx'
-
+  
 
 
 function Services() {
