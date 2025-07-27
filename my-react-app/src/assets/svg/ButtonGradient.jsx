@@ -1,6 +1,6 @@
-const ButtonGradient = () => {
+const ButtonGradient = ({width,height }) => {
   return (
-    <svg className="block" width={0} height={0}>
+    <svg className="block" width={width} height={height}>
       <defs>
         <linearGradient id="btn-left" x1="50%" x2="50%" y1="0%" y2="100%">
           <stop offset="0%" stopColor="#89F9E8" />

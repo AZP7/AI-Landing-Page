@@ -4,5 +4,19 @@
 
     #root{
         background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    @keyframes fade-in {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: .2;
+        }
+        
+    }
+    .fade-in{
+        animation: fade-in .5s ease-in-out;
     }
 }
