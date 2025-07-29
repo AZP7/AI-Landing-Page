@@ -30,7 +30,7 @@ function Hero() {
           </div>
 
               <p className=' w-110 p-1 m-3 text-white font-semibold text-center'>Unleassh the power of AI within Brainwave.Upgrade your productivity with Brainwave,the open AI chat app.</p>
-              <div className='flex  relative m-3 cursor-pointer '>
+              <div className=' flex  relative m-3 cursor-pointer '>
                   <ButtonSvg className={`absolute  top-0 right-0`}/>
                   <p className=' text-center w-full text-[#333] font-bold transform  absolute  '
                     style={{
