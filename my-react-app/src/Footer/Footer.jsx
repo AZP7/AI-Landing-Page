@@ -1,13 +1,14 @@
 import React from 'react'
 import { socials } from '../constants'
-import ButtonSvg from '../assets/svg/ButtonSvg'
-import ButtonGradient from '../assets/Svg/ButtonGradient'
+import ButtonGradient from '../assets/svg/ButtonGradient'
 
 function Footer() {
+  
   return (
+    
     <footer className='flex bg-[#0e0d15] flex-col justify-around items-center w-full h-[30vh]'>
 
-      <div className="relative w-[120px] h-[40px]">
+      <div className="relative w-[140px] h-[50px]">
         <ButtonGradient width={0} height={0} />
 
         <svg
@@ -25,7 +26,8 @@ function Footer() {
         </svg>
 
         <div className="absolute inset-0 flex p-1 items-center justify-center text-black font-semibold">
-          <button className='w-[100%] text-sm h-[100%] font-light bg-black rounded-md text-white hover:text-[#9226e5] transition-all duration-300 cursor-pointer '>
+          <button 
+            className='w-[100%] font-bold text-sm h-[100%] bg-black rounded-md text-white hover:text-[#9226e5] transition-all duration-300 cursor-pointer '>
               OUR ROADMAP
           </button>
         </div>

@@ -1,7 +1,5 @@
 import React from 'react'
 import Brackets from '../assets/svg/Brackets'
-import CustomBtn from '../assets/Svg/CustomBtn'
-
 
 
 function Price() {
@@ -62,13 +60,13 @@ function Price() {
               {
                 data.price && <p>$<span className='text-4xl font-bold ml-1'>{data.price}</span></p>
               }
-              <div className='w-full rounded-xl overflow-hidden h-[70px] '>
-                  <CustomBtn className={`w-full h-full`}/>
+              <div className='w-full justify-center items-center flex overflow-hidden  '>
+                  <button className='border w-full text-center text-[#333] p-2 rounded-lg cursor-pointer font-bold bg-[#fff] '>
+                    GET STARTED
+                  </button>
               </div>
-              {/* <div className=' w-full  bg-black  flex '>
+            
 
-              <button className='border w-[60%] cursor-pointer p-1 text-[#333] bg-[#fff] font-bold ' >{data.btn}</button>
-              </div> */}
             </div>
             <ul className='text-[#fff] mt-6' >
               <li className='text-md flex items-center py-2 mt-3 border-t-1 border-[grey]' >
