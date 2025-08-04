@@ -9,7 +9,7 @@ import grid from '../assets/grid.png'
 
 function FullDetails() {
 
-  const datas = [
+  const data1 = [
     {
       date: "MAY 2023",
       btn: "Done",
@@ -20,19 +20,21 @@ function FullDetails() {
     },
     {
       date: "MAY 2023",
-      btn: "IN PROGRESS",
-      img: image2,
-      icon:"fa-solid mr-3 fa-spinner",
-      title: "Gamification",
-      text: "Add game-like elements,such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently."
-    },
-    {
-      date: "MAY 2023",
       btn: "Done",
       img: image3,
       icon:"fa-solid fa-check  rounded-full p-2",
       title: "Chatbot customization",
       text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with."
+    },
+  ]
+  const data2=[
+    {
+      date: "MAY 2023",
+      btn: "IN PROGRESS",
+      img: image2,
+      icon:"fa-solid mr-3 fa-spinner",
+      title: "Gamification",
+      text: "Add game-like elements,such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently."
     },
     {
       date: "MAY 2023",
@@ -42,11 +44,12 @@ function FullDetails() {
       icon:"fa-solid mr-3 fa-spinner",
       text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations."
     }
+
   ]
 
   return (
 
-    <section className='flex flex-col bg-[#0e0d15] justify-center items-center' id='fullDetails' >
+    <section className='flex flex-col bg-[#0e0d15] pb-6 justify-center items-center' id='fullDetails' >
 
       <div className='text-white w-full p-2'>
         <h1 className='text-center my-3 w-full underline-offset-4 underline '>SEE THE FULL DETAILS</h1>
@@ -60,32 +63,100 @@ function FullDetails() {
           <h2 className='text-2xl font-bold my-2'>What we're working on</h2>
         </div>
       </div>
+      <div className='container flex flex-col md:flex-row '>
 
-      {
-        datas.map((data, index) => (
-          <div key={index}
-          >
-              
-              <div>
+          <div className='flex flex-col mr-1 md:w-[48%] justify-center items-center '>
+              {
+                data1.map((data, index) => (
+                  <div key={index}
+                    style={{
+                      backgroundImage:`url(${grid})`,
+                      backgroundSize:"cover",
+                      backgroundPosition:"center",
+                      backgroundRepeat:"no-repeat"
+                    }}
+                    className='border border-white text-white my-3 w-[80%] md:w-[45vw] rounded-xl h-[70vh] '
+                  >
+                      
+                      <div className=' overflow-hidden h-[70%]  '>
 
-                <div>
+                        <div className='flex w-full  justify-between items-center p-3'>
 
-                  <p>{data.date}</p>
-                  <button>{data.btn}</button>
+                          <p className='flex items-center '>
+                            <Brackets className={`mr-2`}/>
+                            {data.date}
+                            <Brackets className={`ml-2 scale-x-[-1]`} />
 
-                </div>
-                <img src={data.img} alt="" />
+                          </p>
+                          <button className='bg-white rounded-xl py-1 px-3 text-black'>
+                            <i className={data.icon}/>
+                            {data.btn}
+                          </button>
 
-              </div>
+                        </div>
+                        <img src={data.img} className='object-contain' alt="" />
 
-              <div>
+                      </div>
 
-              </div>
+                      <div className='h-[30%] px-3'>
+
+                        <h1 className='text-4xl md:text-3xl font-semibold mb-3'>{data.title}</h1>
+                        <p className='text-[grey]' >{data.text}</p>
+
+                      </div>
+
+                  </div>
+                ))
+              }
 
           </div>
-        ))
-      }
+          <div className='flex flex-col md:w-[48%] translate-y-12 justify-center items-center md:flex-row md:flex-wrap md:justify-evenly '>
+          {
+                data2.map((data, index) => (
+                  <div key={index}
+                    style={{
+                      backgroundImage:`url(${grid})`,
+                      backgroundSize:"cover",
+                      backgroundPosition:"center",
+                      backgroundRepeat:"no-repeat"
+                    }}
+                    className='border border-white text-white my-3 w-[80%] md:w-[45vw] rounded-xl h-[70vh] '
+                  >
+                      
+                      <div className=' overflow-hidden h-[70%]  '>
 
+                        <div className='flex w-full  justify-between items-center p-3'>
+
+                          <p className='flex items-center '>
+                            <Brackets className={`mr-2`}/>
+                            {data.date}
+                            <Brackets className={`ml-2 scale-x-[-1]`} />
+
+                          </p>
+                          <button className='bg-white rounded-xl py-1 px-3 text-black'>
+                            <i className={data.icon}/>
+                            {data.btn}
+                          </button>
+
+                        </div>
+                        <img src={data.img} className='object-contain' alt="" />
+
+                      </div>
+
+                      <div className='h-[30%] px-3'>
+
+                        <h1 className='text-4xl md:text-3xl font-semibold mb-3'>{data.title}</h1>
+                        <p className='text-[grey]' >{data.text}</p>
+
+                      </div>
+
+                  </div>
+                ))
+              }
+
+          </div>
+
+      </div>
     </section>
 
   )

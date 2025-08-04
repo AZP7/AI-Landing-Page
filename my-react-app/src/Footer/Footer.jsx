@@ -35,14 +35,16 @@ function Footer() {
 
       {/* <button className='text-white border border-white p-1 rounded-xl px-2'>OUR ROADMAP</button> */}
 
-      <p className='text-white'>&copy; 2025. All rights reserved</p>
 
-      <div className='flex justify-around w-[60%] items-center'>
+      <div className='flex justify-around flex-col w-full items-center md:flex-row md:justify-between pl-3  '>
+        <p className='text-[grey] text-lg'>&copy; 2025. All rights reserved</p>
+        <div  className='flex my-3 flex-row w-[50%] md:w-[30%] items-center justify-around  '>
         {
           socials.map((data) => (
-            <img src={data.iconUrl} className='w-[40px] p-2 bg-white/10 backdrop-blur-md rounded-full cursor-pointer ' key={data.id} alt="" />
-          ))
+              <img key={data.id} src={data.iconUrl} className='w-[40px] p-2 bg-white/10 backdrop-blur-md rounded-full cursor-pointer ' alt="" />
+            ))
         }
+        </div>
 
       </div>
 
