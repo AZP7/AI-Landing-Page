@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import curve from '../assets/hero/curve.png'
 import robot from '../assets/hero/robot.jpg'
 import bg from '../assets/hero/hero-background.jpg'
+import Tablet from '../Responsive/Tablet'
 
 function Hero() {
+
+
+
+
   return (
     <div className='w-full flex flex-col pt-20 justify-center items-center'
       style={{backgroundImage:`url(${bg})`,
@@ -13,18 +18,23 @@ function Hero() {
     >
         <div className='w-full flex justify-center items-center flex-col '>
 
-          <div className='flex flex-col w-full justify-center items-center'>
-            <h1 className='text-white font-bold w-[75%] text-4xl tracking-wider text-center '  >
-              Explore the Possibilites of AI Chatting with 
-            </h1>
-              <p className='relative w-[30%] text-4xl font-bold text-[#fff]'>
+          <div className='flex  w-[80%] flex-col lg:flex-row items-center  '>
+              <p className='text-white font-bold text-3xl text-center lg:mr-2'>
+
+                Explore the Possibilities of AI Chatting with 
+
+              </p>
+
+              <p className='relative text-white font-bold text-3xl '>
                   Brainwave
-                  <span className='absolute top-[100%]  left-0 w-full h-3 '
-                    style={{backgroundImage:`url(${curve})`,
-                            backgroundSize:'cover',
-                            backgroundRepeat:'no-repeat',
-                            backgroundPosition:"center"}}>
-                  </span>
+                  <span className='absolute h-[20px] -bottom-[10px] left-0 w-[100%]'
+                  style={{
+                      backgroundImage:`url(${curve})`,
+                      backgroundSize:'contain',
+                      backgroundRepeat:'no-repeat',
+                      backgroundPosition:"center"
+                    }}
+                    ></span>
               </p>
           </div>
 

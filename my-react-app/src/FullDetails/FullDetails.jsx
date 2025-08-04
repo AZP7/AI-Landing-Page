@@ -63,9 +63,9 @@ function FullDetails() {
           <h2 className='text-2xl font-bold my-2'>What we're working on</h2>
         </div>
       </div>
-      <div className='container flex flex-col md:flex-row '>
+      <div className='container flex flex-col justify-around md:flex-row '>
 
-          <div className='flex flex-col mr-1 md:w-[48%] justify-center items-center '>
+          <div className='flex flex-col md:w-[48%] justify-center items-center md:flex-row md:flex-wrap md:justify-evenly'>
               {
                 data1.map((data, index) => (
                   <div key={index}
@@ -75,10 +75,10 @@ function FullDetails() {
                       backgroundPosition:"center",
                       backgroundRepeat:"no-repeat"
                     }}
-                    className='border border-white text-white my-3 w-[80%] md:w-[45vw] rounded-xl h-[70vh] '
+                    className='border border-white text-white my-3 w-[90%] h-[650px] overflow-hidden md:w-[45vw] rounded-xl '
                   >
                       
-                      <div className=' overflow-hidden h-[70%]  '>
+                      <div className=' overflow-hidden h-[70%]'>
 
                         <div className='flex w-full  justify-between items-center p-3'>
 
@@ -100,7 +100,7 @@ function FullDetails() {
 
                       <div className='h-[30%] px-3'>
 
-                        <h1 className='text-4xl md:text-3xl font-semibold mb-3'>{data.title}</h1>
+                        <h1 className='text-4xl md:text-2xl font-semibold mb-3'>{data.title}</h1>
                         <p className='text-[grey]' >{data.text}</p>
 
                       </div>
@@ -120,7 +120,7 @@ function FullDetails() {
                       backgroundPosition:"center",
                       backgroundRepeat:"no-repeat"
                     }}
-                    className='border border-white text-white my-3 w-[80%] md:w-[45vw] rounded-xl h-[70vh] '
+                    className='border border-white text-white my-3 w-[90%] md:w-[45vw] rounded-xl h-[650px] '
                   >
                       
                       <div className=' overflow-hidden h-[70%]  '>
@@ -145,7 +145,7 @@ function FullDetails() {
 
                       <div className='h-[30%] px-3'>
 
-                        <h1 className='text-4xl md:text-3xl font-semibold mb-3'>{data.title}</h1>
+                        <h1 className='text-4xl md:text-2xl font-semibold mb-3'>{data.title}</h1>
                         <p className='text-[grey]' >{data.text}</p>
 
                       </div>

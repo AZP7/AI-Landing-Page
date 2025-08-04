@@ -35,7 +35,7 @@ function Services() {
         }}
       >
         <div className='absolute top-0 left-0 w-full h-full bg-black/50 backdrop-blur-xl z-0'></div>
-        <img src={bg1}  className='absolute md:w-[70%] top-0 left-0 h-full object-cover z-0 ' alt="" />
+        <img src={bg1}  className='absolute md:w-[70%] overflow-visible top-0 left-0 h-full object-cover z-0 ' alt="" />
         <div className=' w-[70%] md:w-[40%] mb-15 pr-4 md:pr-1   z-10 '>
 
           <h2 className='font-bold text-3xl md:text-xl md:my-2 text-white my-5'>Smartest AI</h2>
