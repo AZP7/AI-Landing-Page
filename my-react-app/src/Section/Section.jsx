@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { benefits } from '../constants'
 import bgImage from '../assets/benefits/image-2.png'
-import {Desktop} from '../Responsive/Desktop'
+import Desktop from '../Responsive/Desktop'
 
 function Section() {
 
@@ -32,7 +32,7 @@ function Section() {
 
   return (
 
-    <section className='w-full flex md:flex-wrap md:flex-row md:justify-around flex-col justify-center items-center py-10 bg-[#0e0d15] xl:justify-evenly '
+    <section className='w-full flex md:flex-wrap md:flex-row md:justify-around flex-col justify-center items-center py-10 bg-[#040404] xl:justify-evenly '
     >
     
       {

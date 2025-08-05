@@ -7,6 +7,10 @@ import FullDetails from './FullDetails/FullDetails.jsx'
 import Footer from './Footer/Footer.jsx'
 import Collaboration from './Collaboration/Collaboration.jsx'
 import Services from './Services/Services.jsx'
+import Desktop from './Responsive/Desktop.jsx'
+import DesktopComponent from './assets/Svg/DesktopComponents/DesktopComponent.jsx'
+import BgCircle from './BGCircle/BgCircle.jsx'
+
 function App() {
   return (
 
@@ -16,6 +20,9 @@ function App() {
     <Section></Section>
     <Collaboration></Collaboration>
     <Services></Services>
+    {
+      Desktop ? <DesktopComponent></DesktopComponent> : null
+    }
     <Price></Price>
     <FullDetails></FullDetails>
     <Footer></Footer>

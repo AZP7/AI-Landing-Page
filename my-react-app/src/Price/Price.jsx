@@ -1,5 +1,6 @@
 import React from 'react'
 import Brackets from '../assets/svg/Brackets'
+import Line from '../assets/pricing/lines.svg?react'
 
 
 function Price() {
@@ -39,61 +40,67 @@ function Price() {
   ]
 
   return (
-    <div className='w-full pt-6 flex flex-col justify-center items-center bg-[#0e0d15] '>
+    <div className='w-full pt-6 flex flex-col  justify-center items-center bg-[#040404] '>
 
-      <div className='flex  w-full px-4 flex-col justify-center items-start text-white'>
+      <div className='flex  w-full lg:justify-center lg:items-center px-4 flex-col justify-center items-start text-white'>
         <p className='flex justify-center text-[#707090] text-xs items-center '>
           <Brackets className={`mr-2`} />
           GET STARTED WITH BRAINWAVE
           <Brackets className={`scale-x-[-1] ml-2`} />
         </p>
-        <div className='text-2xl mt-4'>Pay once,use forever</div>
+        <div className='text-2xl mt-4 lg:font-medium lg:text-4xl '>Pay once,use forever</div>
       </div>
-      {
-        prices.map((data, index) => (
-          <div key={index} className='border border-[#1f1e1e] w-[95%] h-[60vh] p-3 my-4 rounded-2xl ' >
-            <div className='text-white h-[50%] flex flex-col justify-between '>
-              <h1 className={`text-3xl font-bold `}
-                style={{color:data.titleColor}}
-              >{data.title}</h1>
-              <p className='text-[grey] text-sm ' >{data.text}</p>
-              {
-                data.price && <p>$<span className='text-4xl font-bold ml-1'>{data.price}</span></p>
-              }
-              <div className='w-full justify-center items-center flex overflow-hidden  '>
-                  <button className='border w-full text-center text-[#333] p-2 rounded-lg cursor-pointer font-bold bg-[#fff] '>
-                    GET STARTED
-                  </button>
+      
+      <div className='w-[95%] relative flex flex-col lg:justify-around justify-center items-center lg:flex-row'>
+          {
+            prices.map((data, index) => (
+              <div key={index} className='border border-[#1f1e1e] lg:w-[30%] w-[100%] h-[60vh] lg:h-[550px] p-3 my-4 rounded-2xl ' >
+                <div className='text-white h-[50%] flex flex-col justify-between '>
+                  <h1 className={`text-3xl font-bold `}
+                    style={{color:data.titleColor}}
+                  >{data.title}</h1>
+                  <p className='text-[grey] text-sm ' >{data.text}</p>
+                  {
+                    data.price && <p>$<span className='text-4xl font-bold ml-1'>{data.price}</span></p>
+                  }
+                  <div className='w-full justify-center items-center flex overflow-hidden  '>
+                      <button className='border w-full text-center text-[#333] p-2 rounded-lg cursor-pointer font-bold bg-[#fff] '>
+                        GET STARTED
+                      </button>
+                  </div>
+                
+
+                </div>
+                <ul className='text-[#fff] mt-6' >
+                  <li className='text-md flex items-center py-2 mt-3 border-t-1 border-[grey]' >
+                    <i className="fa-solid  text-black fa-check bg-[#9226e5] mr-3 rounded-full p-1"></i>
+                    <p>
+                      {data.details1}
+                    </p>
+
+
+                  </li>
+                  <li className='text-md flex items-center py-2 mt-3 border-t-1 border-[grey]' >
+                    <i className="fa-solid text-black fa-check bg-[#9226e5] mr-3 rounded-full p-1"></i>
+                    <p>
+                      {data.details2}
+                    </p>
+
+                  </li>
+                  <li className='text-md flex items-center py-2 mt-3 border-t-1 border-[grey]' >
+                    <i className="fa-solid text-black fa-check bg-[#9226e5] mr-3 rounded-full p-1"></i>
+                    <p> 
+                      {data.details3}
+                    </p>
+                  </li>
+                </ul>
               </div>
-            
+            ))
+          }
+          {/* <Line className='absolute -left-[10%]'/> */}
 
-            </div>
-            <ul className='text-[#fff] mt-6' >
-              <li className='text-md flex items-center py-2 mt-3 border-t-1 border-[grey]' >
-                <i className="fa-solid  text-black fa-check bg-[#9226e5] mr-3 rounded-full p-1"></i>
-                <p>
-                  {data.details1}
-                </p>
-
-
-              </li>
-              <li className='text-md flex items-center py-2 mt-3 border-t-1 border-[grey]' >
-                <i className="fa-solid text-black fa-check bg-[#9226e5] mr-3 rounded-full p-1"></i>
-                <p>
-                  {data.details2}
-                </p>
-
-              </li>
-              <li className='text-md flex items-center py-2 mt-3 border-t-1 border-[grey]' >
-                <i className="fa-solid text-black fa-check bg-[#9226e5] mr-3 rounded-full p-1"></i>
-                <p> 
-                  {data.details3}
-                </p>
-              </li>
-            </ul>
-          </div>
-        ))
-      }
+      </div>
+      
 
     </div>
   )

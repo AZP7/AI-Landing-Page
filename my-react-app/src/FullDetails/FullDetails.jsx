@@ -49,18 +49,18 @@ function FullDetails() {
 
   return (
 
-    <section className='flex flex-col bg-[#0e0d15] pb-6 justify-center items-center' id='fullDetails' >
+    <section className='flex flex-col bg-[#040404] pb-6 justify-center items-center' id='fullDetails' >
 
       <div className='text-white w-full p-2'>
-        <h1 className='text-center my-3 w-full underline-offset-4 underline '>SEE THE FULL DETAILS</h1>
-        <div className='my-2'>
+        <h1 className='text-center my-3 w-full underline-offset-4 underline lg:text-sm '>SEE THE FULL DETAILS</h1>
+        <div className='my-2 lg:flex lg:flex-col mt-[50px] lg:pt-5 lg:justify-center lg:items-center'>
           <p className='text-xs flex justify-start items-center'>
             <Brackets className={`mr-2`} />
             READY TO GET STARTED
             <Brackets className={`ml-2 scale-x-[-1]`} />
 
           </p>
-          <h2 className='text-2xl font-bold my-2'>What we're working on</h2>
+          <h2 className='text-2xl lg:text-4xl lg:font-medium font-bold my-2'>What we're working on</h2>
         </div>
       </div>
       <div className='container flex flex-col justify-around md:flex-row '>
@@ -71,7 +71,7 @@ function FullDetails() {
                   <div key={index}
                     style={{
                       backgroundImage:`url(${grid})`,
-                      backgroundSize:"cover",
+                      backgroundSize:"contain",
                       backgroundPosition:"center",
                       backgroundRepeat:"no-repeat"
                     }}
@@ -116,7 +116,7 @@ function FullDetails() {
                   <div key={index}
                     style={{
                       backgroundImage:`url(${grid})`,
-                      backgroundSize:"cover",
+                      backgroundSize:"contain",
                       backgroundPosition:"center",
                       backgroundRepeat:"no-repeat"
                     }}

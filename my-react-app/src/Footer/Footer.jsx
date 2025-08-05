@@ -6,7 +6,7 @@ function Footer() {
   
   return (
     
-    <footer className='flex bg-[#0e0d15] flex-col justify-around items-center w-full h-[30vh]'>
+    <footer className='flex bg-[#040404] flex-col justify-around items-center w-full h-[30vh]'>
 
       <div className="relative w-[140px] h-[50px]">
         <ButtonGradient width={0} height={0} />
@@ -27,7 +27,7 @@ function Footer() {
 
         <div className="absolute inset-0 flex p-1 items-center justify-center text-black font-semibold">
           <button 
-            className='w-[100%] font-bold text-sm h-[100%] bg-black rounded-md text-white hover:text-[#9226e5] transition-all duration-300 cursor-pointer '>
+            className='w-[100%] font-bold lg:font-medium text-sm h-[100%] bg-black rounded-md text-white hover:text-[#9226e5] transition-all duration-300 cursor-pointer '>
               OUR ROADMAP
           </button>
         </div>
