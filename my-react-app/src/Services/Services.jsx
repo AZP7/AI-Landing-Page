@@ -11,7 +11,7 @@ import gradientBg from '../assets/gradient.png'
 function Services() {
   return (
 
-    <section className='flex flex-col justify-center items-center bg-[#040404] '
+    <section className='flex flex-col justify-center items-center bg-[var(--bg-color)]'
     // style={{backgroundImage:`url(${bgImage})`,backgroundSize:'cover',backgroundRepeat:'no-repeat',backgroundPosition:'center'}}
     >
       <div

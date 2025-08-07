@@ -49,7 +49,7 @@ function FullDetails() {
 
   return (
 
-    <section className='flex flex-col bg-[#040404] pb-6 justify-center items-center' id='fullDetails' >
+    <section className='flex flex-col bg-[var(--bg-color)] pb-6 justify-center items-center' id='fullDetails' >
 
       <div className='text-white w-full p-2'>
         <h1 className='text-center my-3 w-full underline-offset-4 underline lg:text-sm '>SEE THE FULL DETAILS</h1>

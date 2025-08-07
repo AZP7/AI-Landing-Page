@@ -40,7 +40,7 @@ function Price() {
   ]
 
   return (
-    <div className='w-full pt-6 flex flex-col  justify-center items-center bg-[#040404] '>
+    <div className='w-full pt-6 flex flex-col  justify-center items-center bg-[var(--bg-color)] '>
 
       <div className='flex  w-full lg:justify-center lg:items-center px-4 flex-col justify-center items-start text-white'>
         <p className='flex justify-center text-[#707090] text-xs items-center '>
@@ -64,7 +64,9 @@ function Price() {
                     data.price && <p>$<span className='text-4xl font-bold ml-1'>{data.price}</span></p>
                   }
                   <div className='w-full justify-center items-center flex overflow-hidden  '>
-                      <button className='border w-full text-center text-[#333] p-2 rounded-lg cursor-pointer font-bold bg-[#fff] '>
+                      <button
+                        style={{color:data.titleColor}}
+                        className=' w-full text-center p-2 rounded-lg cursor-pointer font-bold bg-[#fff] '>
                         GET STARTED
                       </button>
                   </div>
@@ -74,7 +76,7 @@ function Price() {
                 <ul className='text-[#fff] mt-6' >
                   <li className='text-md flex items-center py-2 mt-3 border-t-1 border-[grey]' >
                     <i className="fa-solid  text-black fa-check bg-[#9226e5] mr-3 rounded-full p-1"></i>
-                    <p>
+                    <p className='text-sm'>
                       {data.details1}
                     </p>
 
@@ -82,14 +84,14 @@ function Price() {
                   </li>
                   <li className='text-md flex items-center py-2 mt-3 border-t-1 border-[grey]' >
                     <i className="fa-solid text-black fa-check bg-[#9226e5] mr-3 rounded-full p-1"></i>
-                    <p>
+                    <p className='text-sm'>
                       {data.details2}
                     </p>
 
                   </li>
                   <li className='text-md flex items-center py-2 mt-3 border-t-1 border-[grey]' >
                     <i className="fa-solid text-black fa-check bg-[#9226e5] mr-3 rounded-full p-1"></i>
-                    <p> 
+                    <p className='text-sm'> 
                       {data.details3}
                     </p>
                   </li>

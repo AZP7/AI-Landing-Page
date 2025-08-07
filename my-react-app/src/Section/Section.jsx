@@ -32,7 +32,7 @@ function Section() {
 
   return (
 
-    <section className='w-full flex md:flex-wrap md:flex-row md:justify-around flex-col justify-center items-center py-10 bg-[#040404] xl:justify-evenly '
+    <section className='w-full flex md:flex-wrap md:flex-row md:justify-around flex-col justify-center items-center py-10 bg-[var(--bg-color)] xl:justify-evenly '
     >
     
       {

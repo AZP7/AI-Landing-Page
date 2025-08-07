@@ -6,7 +6,7 @@ function Footer() {
   
   return (
     
-    <footer className='flex bg-[#040404] flex-col justify-around items-center w-full h-[30vh]'>
+    <footer className='flex bg-[var(--bg-color)] flex-col justify-around items-center w-full h-[30vh]'>
 
       <div className="relative w-[140px] h-[50px]">
         <ButtonGradient width={0} height={0} />

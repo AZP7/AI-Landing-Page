@@ -18,7 +18,7 @@ function Collaboration() {
 
 
     return (
-        <section className='w-full p-3 flex flex-col lg:h-[100vh] lg:flex-row md:items-start justify-center items-center bg-[#040404] '>
+        <section className='w-full p-3 flex flex-col lg:h-[100vh] lg:flex-row md:items-start justify-center items-center bg-[var(--bg-color)] '>
             <div className='lg:h-[100%] flex flex-col pl-4'>
 
                     <h2 className='text-white text-2xl lg:text-left lg:w-[70%] lg:text-4xl font-bold my-10'>AI Chat App for seamless collaboration</h2>

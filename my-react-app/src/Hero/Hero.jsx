@@ -8,7 +8,7 @@ import BgCircle from '../BGCircle/BgCircle'
 function Hero() {
 
   return (
-    <div className='w-full flex flex-col pt-20 overflow-hidden bg-[#040404] justify-center items-center relative'
+    <div className='w-full flex flex-col pt-20 overflow-hidden bg-[var(--bg-color)] justify-center items-center relative'
       style={{
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",
@@ -44,19 +44,23 @@ function Hero() {
       </div>
 
       <div
-        className="w-[80%] lg:w-[70%] p-1 flex justify-center items-start h-[70vh] rounded-xl overflow-hidden my-3"
+        className="w-[80%] lg:w-[70%]  relative p-[10px] flex justify-center items-start h-[65vh] rounded-xl overflow-hidden my-3"
         style={{
           backgroundImage: `linear-gradient(to bottom left, #663695, #e5d38f),
                             linear-gradient(to bottom right, #67a89f, #ec8be7)`
         }}
-      >            
-          <div className='w-full h-[80%] relative border border-white overflow-hidden '>
+      >   
+          <div className='w-[90%] h-[80%] rounded-xl bg-[#1b1b2e] absolute top-1/2 left-1/2 transform z-10 -translate-x-1/2 -translate-y-1/2 '></div>
+          <div className='w-[80%] h-[65%] rounded-xl bg-[#1b1b2e]/30 backdrop-blur-lg absolute top-33  left-1/2 -translate-x-1/2 z-0 '></div>
+          <div className='w-full h-[85%] flex justify-center items-center relative rounded-xl  overflow-hidden '>
+
 
             <img 
                 src={robot} 
                 alt=""
-                className="absolute top-0 left-0 -translate-y-60 object-cover" 
+                className="absolute top-0 w-full z-100  left-0 -translate-y-60 object-contain" 
                 />
+
           </div>
 
         </div>
