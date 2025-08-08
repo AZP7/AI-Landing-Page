@@ -17,7 +17,7 @@ function Services() {
       <div
         className=' w-full flex mt-7 flex-col md:justify-center md:items-center text-[#fff] p-2'
       >
-        <h1 className='text-2xl font-semibold lg:font-medium lg:text-4xl mb-5 '>Generative AI made for creators.</h1>
+        <h1 className='text-3xl font-semibold lg:font-medium lg:text-4xl mb-5 '>Generative AI made for creators.</h1>
         <p
           className='text-[grey] mb-10 lg:text-sm '
         >

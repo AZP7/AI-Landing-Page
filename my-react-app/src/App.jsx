@@ -8,7 +8,7 @@ import Footer from './Footer/Footer.jsx'
 import Collaboration from './Collaboration/Collaboration.jsx'
 import Services from './Services/Services.jsx'
 import Desktop from './Responsive/Desktop.jsx'
-import DesktopComponent from './assets/Svg/DesktopComponents/DesktopComponent.jsx'
+import DesktopComponent from './assets/svg/DesktopComponents/DesktopComponent.jsx'
 
 function App() {
   const isDesktop = Desktop();

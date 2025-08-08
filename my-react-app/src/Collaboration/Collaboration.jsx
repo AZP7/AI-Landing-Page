@@ -13,12 +13,14 @@ import logo from '../assets/brainwave-symbol.svg'
 import { collabContent } from "../constants/index.js"
 import Curve2 from "../assets/collaboration/curve-2.svg?react"
 import Curve1 from '../assets/collaboration/curve-1.svg?react'
+import Desktop from '../Responsive/Desktop.jsx'
 
 function Collaboration() {
 
+    const IsDesktop = Desktop();
 
     return (
-        <section className='w-full p-3 flex flex-col lg:h-[100vh] lg:flex-row md:items-start justify-center items-center bg-[var(--bg-color)] '>
+        <section className='w-full p-3 pb-10 flex flex-col lg:h-[100vh] lg:flex-row md:items-start justify-center items-center bg-[var(--bg-color)] '>
             <div className='lg:h-[100%] flex flex-col pl-4'>
 
                     <h2 className='text-white text-2xl lg:text-left lg:w-[70%] lg:text-4xl font-bold my-10'>AI Chat App for seamless collaboration</h2>
@@ -34,8 +36,8 @@ function Collaboration() {
 
                     <div className='flex justify-start w-[40%] '>
 
-                        <button className='px-4 text-[#333] bg-white rounded-lg font-bold cursor-pointer py-2'>TRY IT NOW</button>
-
+                        <button className='px-2 text-[#333] bg-white rounded-lg font-bold cursor-pointer py-2'>TRY IT NOW</button>
+                    
                     </div>
             </div>
 
@@ -44,10 +46,10 @@ function Collaboration() {
             <div className='w-full flex flex-col justify-center lg:justify-start lg:h-[100%] items-center'>
                     {
                         collabContent.map((data) => (
-                            <p key={data.id} className='text-[#8d8e8f] lg:w-[40%] lg:text-left text-sm mt-4'>{data.text ? data.text : ""}</p>
+                            <p key={data.id} className='text-[#8d8e8f] lg:w-[40%] md:text-lg lg:text-left text-sm mt-4'>{data.text ? data.text : ""}</p>
                         ))
                     }
-                <div className='border-[#565557] relative xl:translate-x-20 translate-y-15 mt-4 border w-[350px] h-[350px] rounded-full flex justify-center items-center  '>
+                <div className='border-[#565557] relative xl:translate-x-20 translate-y-15 mt-4 border w-[250px] md:w-[350px] md:h-[350px] md:pb-6 h-[250px] rounded-full flex justify-center items-center  '>
                 
                     <div className='relative  border-[#565557] border w-[70%] h-[70%] rounded-full flex justify-center items-center '>
                         <div className='border border-white p-1 rounded-full bg-gradient-to-r from-pink-500 via-yellow-500 to-cyan-500 '>
@@ -66,13 +68,20 @@ function Collaboration() {
 
                     </div>
 
+                        {
+                            IsDesktop ?
+                            <>
                         <Curve1
-                         fill="#fff"
-                         className='absolute -left-[150%] w-[500px]  top-[50%]'/>
-
-                         <Curve2
-                           className='absolute -right-[55%] top-[50%]' 
-                            />
+                        fill="#fff"
+                        className='absolute -left-[150%] w-[500px]  top-[50%]'/>
+                        
+                        <Curve2
+                        className='absolute -right-[55%] top-[50%]' 
+                        />
+                        </>
+                        : 
+                        null
+                    }
                 </div>
 
             </div>

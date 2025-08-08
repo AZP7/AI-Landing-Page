@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { benefits } from '../constants'
 import bgImage from '../assets/benefits/image-2.png'
-import Desktop from '../Responsive/Desktop'
 
 function Section() {
 
@@ -49,11 +48,11 @@ function Section() {
               }
             <div className=' w-full p-4'>
               <h2 className='text-white lg:text-xl text-3xl mb-2 xl:text-2xl font-bold'>{benefit.title}</h2>
-              <p className='text-[#8d8e8f] text-lg lg:text-sm mt-3 xl:text-sm '>{benefit.text}</p>
+              <p className='text-[#8d8e8f] text-md lg:text-sm mt-3 xl:text-sm '>{benefit.text}</p>
             </div>
 
             <div className='w-full p-4 flex justify-between'>
-              <img src={benefit.iconUrl} alt="" className='cursor-pointer w-[35%] lg:w-[50px]  xl:w-[20%] h-[70px]  ' />
+              <img src={benefit.iconUrl} alt="" className='cursor-pointer w-[20%] lg:w-[50px]  xl:w-[20%] h-[70px]  ' />
               <button className='text-white lg:text-sm font-semibold cursor-pointer'>EXPLORE MORE <i className="fa-solid fa-chevron-right text-white ml-3"></i> </button>
             </div>
           </div>

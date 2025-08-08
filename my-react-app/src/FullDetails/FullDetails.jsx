@@ -75,12 +75,12 @@ function FullDetails() {
                       backgroundPosition:"center",
                       backgroundRepeat:"no-repeat"
                     }}
-                    className='border border-white text-white my-3 w-[90%] h-[650px] overflow-hidden md:w-[45vw] rounded-xl '
+                    className='border flex flex-col justify-between border-white text-white my-3 w-[90%] xl:w-[80%] xl:h-[600px] h-[550px] overflow-hidden md:w-[45vw] rounded-xl '
                   >
                       
-                      <div className=' overflow-hidden h-[70%]'>
+                      <div className=' overflow-hidden h-[60%] xl:h-[70%'>
 
-                        <div className='flex w-full  justify-between items-center p-3'>
+                        <div className='flex w-full justify-between items-center p-3'>
 
                           <p className='flex items-center '>
                             <Brackets className={`mr-2`}/>
@@ -94,13 +94,13 @@ function FullDetails() {
                           </button>
 
                         </div>
-                        <img src={data.img} className='object-contain' alt="" />
+                        <img src={data.img} className='object-contain xl:w-full xl:h-full' alt="" />
 
                       </div>
 
-                      <div className='h-[30%] px-3'>
+                      <div className='h-[30%]  px-3'>
 
-                        <h1 className='text-4xl md:text-2xl font-semibold mb-3'>{data.title}</h1>
+                        <h1 className='text-3xl md:text-2xl font-semibold mb-3'>{data.title}</h1>
                         <p className='text-[grey]' >{data.text}</p>
 
                       </div>
@@ -110,7 +110,7 @@ function FullDetails() {
               }
 
           </div>
-          <div className='flex flex-col md:w-[48%] translate-y-12 justify-center items-center md:flex-row md:flex-wrap md:justify-evenly '>
+          <div className='flex flex-col  md:w-[48%] translate-y-12 justify-center items-center md:flex-row md:flex-wrap md:justify-evenly '>
           {
                 data2.map((data, index) => (
                   <div key={index}
@@ -120,10 +120,10 @@ function FullDetails() {
                       backgroundPosition:"center",
                       backgroundRepeat:"no-repeat"
                     }}
-                    className='border border-white text-white my-3 w-[90%] md:w-[45vw] rounded-xl h-[650px] '
+                    className='border flex flex-col justify-between xl:w-[80%] xl:h-[600px] border-white text-white my-3 w-[90%] md:w-[45vw] rounded-xl h-[550px] '
                   >
                       
-                      <div className=' overflow-hidden h-[70%]  '>
+                      <div className=' overflow-hidden h-[60%]  '>
 
                         <div className='flex w-full  justify-between items-center p-3'>
 
@@ -145,7 +145,7 @@ function FullDetails() {
 
                       <div className='h-[30%] px-3'>
 
-                        <h1 className='text-4xl md:text-2xl font-semibold mb-3'>{data.title}</h1>
+                        <h1 className='text-3xl md:text-2xl font-semibold mb-3'>{data.title}</h1>
                         <p className='text-[grey]' >{data.text}</p>
 
                       </div>

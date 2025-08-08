@@ -54,7 +54,7 @@ function Price() {
       <div className='w-[95%] relative flex flex-col lg:justify-around justify-center items-center lg:flex-row'>
           {
             prices.map((data, index) => (
-              <div key={index} className='border border-[#1f1e1e] lg:w-[30%] w-[100%] h-[60vh] lg:h-[550px] p-3 my-4 rounded-2xl ' >
+              <div key={index} className='border border-[#1f1e1e] lg:w-[30%] w-[100%] h-[400px] lg:h-[550px] p-3 my-4 rounded-2xl ' >
                 <div className='text-white h-[50%] flex flex-col justify-between '>
                   <h1 className={`text-3xl font-bold `}
                     style={{color:data.titleColor}}
@@ -73,25 +73,25 @@ function Price() {
                 
 
                 </div>
-                <ul className='text-[#fff] mt-6' >
+                <ul className='text-[#fff] mt-6 ' >
                   <li className='text-md flex items-center py-2 mt-3 border-t-1 border-[grey]' >
-                    <i className="fa-solid  text-black fa-check bg-[#9226e5] mr-3 rounded-full p-1"></i>
-                    <p className='text-sm'>
+                    <i className="fa-solid md:text-sm text-xs text-black fa-check bg-[#9226e5] mr-3 rounded-full p-1"></i>
+                    <p className='text-xs md:text-sm'>
                       {data.details1}
                     </p>
 
 
                   </li>
                   <li className='text-md flex items-center py-2 mt-3 border-t-1 border-[grey]' >
-                    <i className="fa-solid text-black fa-check bg-[#9226e5] mr-3 rounded-full p-1"></i>
-                    <p className='text-sm'>
+                    <i className="fa-solid md:text-sm text-xs text-black fa-check bg-[#9226e5] mr-3 rounded-full p-1"></i>
+                    <p className='text-xs md:text-sm'>
                       {data.details2}
                     </p>
 
                   </li>
                   <li className='text-md flex items-center py-2 mt-3 border-t-1 border-[grey]' >
-                    <i className="fa-solid text-black fa-check bg-[#9226e5] mr-3 rounded-full p-1"></i>
-                    <p className='text-sm'> 
+                    <i className="fa-solid md:text-sm text-xs text-black fa-check bg-[#9226e5] mr-3 rounded-full p-1"></i>
+                    <p className='text-xs md:text-sm'> 
                       {data.details3}
                     </p>
                   </li>
